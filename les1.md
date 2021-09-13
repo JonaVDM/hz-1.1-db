@@ -1,4 +1,6 @@
-# Huiswerk
+# Les 1 (Monday 13 sep)
+
+## Huiswerk
 
 1.2
 1.3
@@ -58,3 +60,57 @@ Bij de `Product` tabel, bij de rij met de naam `pernod` verander `eenheid` naar 
 ## 1.4
 
 Mango word nog gebruikt in het recept `Mango Plus Plus`.
+
+---
+
+## 1.6
+
+a) nee
+B) nope
+c) ja
+
+---
+
+## 1.7
+
+**order**
+
+| ordernr | klantnr | datum      | totaalbedrag |
+| ------- | ------- | ---------- | ------------ |
+| 5773    | 1234    | 20-10-2020 | 95.10        |
+| 5774    | 1447    | 20-10-2020 | 57.60        |
+| 5793    | 1234    | 22-10-2020 | 65.60        |
+
+**klant**
+
+| klantnr | naam   |
+| ------- | ------ |
+| 1234    | Cupido |
+
+**artikel**
+
+| artikelnr | omschrijving | prijs |
+| --------- | ------------ | ----- |
+| 351       | slevel       | 15.80 |
+| 107       | zwenkmoer    | 2.20  |
+| 449       | wigbek       | 13.50 |
+| 180       | zwalik       | 26.00 |
+
+**orderregels**
+
+| ordernr | artikelnr | aantal | totaal |
+| ------- | --------- | ------ | ------ |
+| 5773    | 351       | 2      | 31.60  |
+| 5773    | 107       | 10     | 22.00  |
+| 5773    | 449       | 3      | 41.50  |
+| 5774    | 351       | 2      | 31.60  |
+| 5774    | 180       | 1      | 26.00  |
+| 5773    | 449       | 1      | 13.50  |
+| 5774    | 180       | 1      | 52.00  |
+
+---
+
+## 1.8
+
+Inderdaad kan het in een applicatie gedaan worden. Je kunt ook gebruik maken de SQL function `SUM`.
+Pittig nutteloos en redundant om hier nog een keer op te slaan
