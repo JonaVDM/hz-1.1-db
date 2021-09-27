@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  db:
+    build: jonavdm/hzdb
+    ports:
+      - 3050:3050
