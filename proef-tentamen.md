@@ -1,0 +1,80 @@
+## Vraag 1
+
+```sql
+SELECT DISTINCT product FROM INGREDIENT i
+ORDER BY HOEVEELHEIDPP, PRODUCT
+```
+
+## Vraag 2
+
+```sql
+SELECT g.NAAM, i.PRODUCT FROM GERECHT g
+JOIN INGREDIENT i
+	ON g.NAAM = i.GERECHT
+WHERE g.BEREIDINGSTIJD = 20
+```
+
+## Vraag 3
+
+```sql
+SELECT i.GERECHT, i.PRODUCT, i.HOEVEELHEIDPP FROM INGREDIENT i
+WHERE i.GERECHT = 'Mango Plus Plus'
+```
+
+## Vraag 4
+
+```sql
+SELECT MAX(p.ENERGIEPE) FROM INGREDIENT i
+JOIN PRODUCT p
+	ON i.PRODUCT = p.NAAM
+WHERE i.GERECHT = 'Glace Terrace’
+```
+
+## vraag 5
+
+```sql
+SELECT i.PRODUCT, count(i.PRODUCT) FROM INGREDIENT i
+GROUP BY i.PRODUCT
+HAVING 1 < count(i.PRODUCT)
+```
+
+## Vraag 6
+
+```sql
+SELECT i.PRODUCT FROM INGREDIENT i
+WHERE i.GERECHT = 'Glace Terrace' AND i.HOEVEELHEIDPP = (
+	SELECT max(i2.HOEVEELHEIDPP) FROM INGREDIENT i2
+)
+```
+
+## Vraag 7
+
+```sql
+
+```
+
+## Vraag 8
+
+```sql
+SELECT p.NAAM, p.EENHEID FROM GERECHT g
+JOIN INGREDIENT i
+	ON g.NAAM = i.GERECHT
+JOIN PRODUCT p
+	ON i.PRODUCT = p.NAAM
+WHERE g.BEREIDINGSTIJD = 8
+```
+
+## Vraag 9
+
+```sql
+INSERT INTO PRODUCT
+VALUES('perzik', 'stuks', 1024);
+
+INSERT INTO GERECHT
+VALUES('Coupe Pêche Melba', 512, 50, 'Doe iets leuks');
+
+INSERT INTO INGREDIENT
+VALUES ('Coupe Pêche Melba', 'perzik', 0.5, 1);
+```
+
+## Vraag 10
